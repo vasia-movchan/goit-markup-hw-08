@@ -1,0 +1,35 @@
+.mobile-menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+  transition: color 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--btn-color);
+  }
+
+  .mobile-menu-icon {
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .icon-mobile-menu-close {
+    display: none;
+  }
+
+  &.is-open {
+    .icon-mobile-menu {
+      display: none;
+    }
+
+    .icon-mobile-menu-close {
+      display: block;
+    }
+  }
+}
