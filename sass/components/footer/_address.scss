@@ -1,0 +1,24 @@
+.address {
+  padding-top: 20px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.address__link {
+  font-style: normal;
+  line-height: calc(24 / 14);
+  color: var(--btn-text-first-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--text-hover-color);
+  }
+}
+
+.transparency {
+  color: var(--color-transparency);
+}

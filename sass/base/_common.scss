@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--content-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-color);
+}
+
+// Убирает подчеркивание с линков
+.link {
+  text-decoration: none;
+}
+
+// Убирает маркеры в списках
+.list {
+  list-style: none;
+}
+
+// Делает картинки блочными элементами
+img {
+  display: block;
+}

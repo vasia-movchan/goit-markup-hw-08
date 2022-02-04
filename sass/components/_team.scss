@@ -1,0 +1,14 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--team-bg-color);
+}
+
+.team__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--title-text-color);
+}

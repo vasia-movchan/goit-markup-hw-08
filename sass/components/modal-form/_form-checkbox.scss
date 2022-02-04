@@ -1,0 +1,32 @@
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.checkbox {
+  &:checked {
+    + .confirm__checkbox {
+      background-color: var(--icon-close-modal-second-color);
+      border-color: var(--icon-close-modal-second-color);
+      background-image: url(../images/icons/checkbox2.svg);
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
+}
+
+.confirm__checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}

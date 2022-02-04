@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #ffffff;
+  --title-text-color: #212121;
+  --content-text-color: #757575;
+  --text-hover-color: #2196f3;
+  --btn-color: #2196f3;
+  --btn-filter-color: #f5f4fa;
+  --btn-color-hover: #188ce8;
+  --btn-text-first-color: #ffffff;
+  --btn-text-second-color: #212121;
+
+  // Логотип
+  --logo-dark-color: #000000;
+  --logo-light-color: #ffffff;
+
+  --color-transparency: rgba(255, 255, 255, 0.6);
+  --hero-bg-color: #c4c4c4;
+  --hero-gradient: rgba(47, 48, 58, 0.4);
+  --header-border-color: #ececec;
+  --team-bg-color: #f5f4fa;
+  --advantage-item-bg: #f5f4fa;
+
+  // Іконки соцмереж
+  --social-light-color: #afb1b8;
+  --social-light-bg: #ffffff;
+  --social-dark-color: #ffffff;
+  --social-dark-bg: rgba(255, 255, 255, 0.1);
+  --social-color-hover: #ffffff;
+  --social-bg-color-hover: #2196f3;
+
+  // Заголовки футера
+  --footer-title-color: #ffffff;
+
+  --clients-item: #afb1b8;
+  --clients-item-hover: #2196f3;
+  --footer-bg-color: #2f303a;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --icon-close-modal-first-color: #000000;
+  --icon-close-modal-second-color: #2196f3;
+}
