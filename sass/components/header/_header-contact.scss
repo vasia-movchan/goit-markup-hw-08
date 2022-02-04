@@ -3,16 +3,29 @@
   flex-direction: column-reverse;
   flex-grow: 1;
 
-  // align-items: center;
-  // margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: block;
+    flex-grow: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .header-contact__item {
   padding-top: 32px;
-}
 
-.header-contact__item:last-child {
-  // margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
 }
 
 .header-contact__link {
@@ -20,47 +33,56 @@
   letter-spacing: 0.02em;
   color: var(--content-text-color);
 
-  &.header-contact__mail {
-    font-size: 24px;
-    line-height: calc(28 / 24);
+  @media screen and (max-width: 767px) {
+    &.header-contact__mail {
+      font-size: 24px;
+      line-height: calc(28 / 24);
+    }
+
+    &.header-contact__tel {
+      font-size: 34px;
+      line-height: calc(40 / 34);
+      color: var(--text-hover-color);
+    }
   }
 
-  &.header-contact__tel {
-    font-size: 34px;
-    line-height: calc(40 / 34);
-    color: var(--text-hover-color);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--content-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--text-hover-color);
+    }
   }
 }
-
-// display: flex;
-// align-items: center;
-// padding-top: 32px;
-// padding-bottom: 31px;
-// font-family: 'Roboto', sans-serif;
-// font-weight: 500;
-// font-size: 14px;
-// line-height: calc(16 / 14);
-// letter-spacing: 0.02em;
-// color: var(--content-text-color);
-// transition-property: color;
-// transition-duration: 250ms;
-// transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// &:hover,
-// &:focus {
-//   color: var(--text-hover-color);
-// }
 
 .header-contact__icon {
   display: none;
 
-  // margin-right: 10px;
-  // fill: currentColor;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 .header-social {
   display: flex;
   flex-wrap: wrap;
   padding-top: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    padding-top: 0;
+  }
 }
 
 .header-social__item:not(:last-child) {
