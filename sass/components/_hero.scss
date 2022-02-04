@@ -1,23 +1,39 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // padding-left: 60px;
+  // padding-right: 60px;
+  margin: 0 auto;
   background-color: var(--hero-bg-color);
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
-    url('../images/hero.jpg');
+    url('../images/mobile-img/hero-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
+  max-width: 480px;
   background-size: cover;
-  height: 600px;
-  margin: 0 auto;
+  height: 400px;
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+      url('../images/mobile-img/hero-mobile@2x.jpg');
+  }
+
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+
+  // background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+  //   url('../images/hero.jpg');
+  // max-width: 1600px;
+  // height: 600px;
 }
 
 .hero__title {
-  margin: 0 auto 30px;
-  width: 696px;
+  max-width: 360px;
+  margin: 0 auto 30px auto;
+  // width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
