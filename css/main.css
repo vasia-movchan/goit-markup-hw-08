@@ -115,17 +115,10 @@ ul {
   color: var(--text-hover-color);
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: calc(31 / 26);
-    margin-right: 93px;
   }
 }
 
@@ -187,6 +180,13 @@ ul {
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
   }
 }
 
@@ -832,9 +832,26 @@ ul {
   background-color: var(--footer-bg-color);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__title {
@@ -872,20 +889,50 @@ ul {
 }
 
 .join {
-  padding-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.subscription {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .join {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 165px;
+    padding-top: 5px;
+  }
 }
 
-.subscription-form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .join {
+    padding-left: 70px;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscription {
+    padding-top: 60px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: auto;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
+  }
 }
 
 .subscription-form__input {
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
   padding-left: 16px;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -902,6 +949,13 @@ ul {
   color: var(--color-transparency);
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
 .subscription-form__btn {
   display: flex;
   justify-content: center;
@@ -910,7 +964,7 @@ ul {
   width: 200px;
   height: 50px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border-radius: 4px;
   background-color: var(--btn-color);
   border: none;
