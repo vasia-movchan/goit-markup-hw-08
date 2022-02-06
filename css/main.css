@@ -848,8 +848,9 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  max-width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -858,13 +859,26 @@ ul {
   transform: translate(-50%, -50%) translateY(0px);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
+}
+
 .modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: calc(23 / 20);
+  }
 }
 
 .modal__close {
@@ -955,9 +969,16 @@ ul {
 }
 
 .form-field__comment::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
+  font-size: 14px;
+  line-height: calc(16 / 14);
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-field__comment::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
 }
 
 .checkbox {
@@ -998,7 +1019,15 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+}
+
+@media screen and (min-width: 1200px) {
+  .confirm__label {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .confirm__link {

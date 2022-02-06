@@ -16,8 +16,13 @@
     border: 1px solid var(--icon-close-modal-second-color);
   }
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
   }
 }
