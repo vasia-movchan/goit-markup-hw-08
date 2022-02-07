@@ -61,7 +61,10 @@
                 href="mailto:info@devstudio.com"
                 class="link header-contact__link header-contact__mail"
               >
-                <svg class="header-contact__icon" width="16" height="12">
+                <svg class="header-contact__icon desktop" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                <svg class="header-contact__icon tablet" width="14" height="10">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -69,7 +72,10 @@
             </li>
             <li class="header-contact__item">
               <a href="tel:+380961111111" class="link header-contact__link header-contact__tel">
-                <svg class="header-contact__icon" width="10" height="16">
+                <svg class="header-contact__icon desktop" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                <svg class="header-contact__icon tablet" width="10" height="14">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -94,12 +100,14 @@
         </div>
       </div>
     </header>
+
     <!-- Основной контент -->
     <main>
       <!-- Портфолио с примерами работ -->
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио с примерами работ</h1>
+
           <!-- Кнопки фильтра -->
           <ul class="list filter">
             <li class="filter__item">
@@ -118,8 +126,9 @@
               <button type="button" class="filter__btn">Маркетинг</button>
             </li>
           </ul>
+
           <!-- Галерея с примерами работ -->
-          <ul class="list card-set">
+          <!-- <ul class="list card-set">
             <li class="card-set__item">
               <a href="" class="card link">
                 <img
@@ -289,10 +298,11 @@
                 </div>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
+
     <!-- Футер -->
     <footer class="footer">
       <div class="container footer-container">
