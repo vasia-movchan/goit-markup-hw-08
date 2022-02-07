@@ -1,12 +1,28 @@
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.card-set__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .card-set__item {
-  flex-basis: calc(100% / var(--number-of-cards) - 30px);
-  margin-top: 30px;
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
